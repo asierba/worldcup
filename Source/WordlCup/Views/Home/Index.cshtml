@@ -1,11 +1,14 @@
 ﻿@{
-    ViewBag.Title = "Wordl Cup";
+    ViewBag.Title = "World Cup";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div>
-    <label>Name:</label>
-    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-    <hr>
-    <h1>Hello {{yourName}}!</h1>
+<h2>Teams</h2>
+
+<div ng-controller="TeamCtrl">
+    <ul class="unstyled">
+    <li ng-repeat="team in teams">
+        <span>{{team.name}}</span>
+    </li>
+    </ul>
 </div>
