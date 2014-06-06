@@ -1,14 +1,17 @@
-﻿@{
-    ViewBag.Title = "World Cup";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿<!DOCTYPE html>
+<html ng-app="routes">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>TITLE</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <div ng-view></div>  
 
-<h2>Teams</h2>
-
-<div ng-controller="TeamCtrl">
-    <ul class="unstyled">
-    <li ng-repeat="team in teams">
-        <span>{{team.name}}</span>
-    </li>
-    </ul>
-</div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/angular")
+        @Scripts.Render("~/bundles/*")
+    </body>
+</html>

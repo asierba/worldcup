@@ -47,7 +47,9 @@ namespace WordlCup.App_Start
                 "~/Content/themes/base/jquery.ui.theme.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                "~/Scripts/Lib/angular.js"));
+                "~/Scripts/Lib/angular.js",
+                "~/Scripts/Lib/angular-route.js",
+                "~/Scripts/Lib/angular-resource.js"));
         }
     }
 }
