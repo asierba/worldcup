@@ -478,6 +478,7 @@
     <Content Include="Scripts\Lib\knockout-2.2.0.js" />
     <Content Include="Scripts\Lib\modernizr-2.6.2.js" />
     <Content Include="Scripts\Lib\_references.js" />
+    <Content Include="Scripts\team.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
